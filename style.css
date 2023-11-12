@@ -1,0 +1,96 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+#spacing {
+    display: flex;
+    border-style: solid;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    border-style: solid;
+    height: 30rem;
+    width: 26rem;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    width: 25%;
+}
+
+#sidebar > * {
+    text-align: center;
+    margin: 0.1rem;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    flex-grow: 1;
+}
+
+#calculator > * {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    border-style: solid;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#result {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    min-height: 25%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#content {
+    font-size: 2rem;
+    margin: 0;
+}
+
+#firstRow > *, #secondRow > *, #thirdRow > *, #fourthRow > *, #fifthRow > * {
+    display: flex;
+    flex: 1;
+    border-style: solid;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 2;
+    border-right: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+#firstRow > * > *, #secondRow > * > *, #thirdRow > * > *, #fourthRow > * > *, #fifthRow > * > * {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    user-select: none;
+}
+
+#zero {
+    flex: 2;
+}
+
+.icon {
+    height: 80%;
+}
